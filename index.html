@@ -6,106 +6,116 @@
     <link rel="shortcut icon" href="assets/Mate.ico" type="icons8-mate-16" />
     <title>Mateando</title>
     <style>
-        body {
-    font-family: "Lucida Console", "Courier New", monospace;
-    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
-    padding: 0;
-    margin: 0;
-}
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
 
-header {
-    text-align: center;
-}
+      header {
+        text-align: center;
+      }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
 
-li {
-    float: left;
-}
+      li {
+        float: left;
+      }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-li a:hover:not(.active) {
-    background-color: #111;
-}
+      li a:hover {
+            background-color: #92a4ff;
+        }
 
 .active {
-    background-color: #92a4ff;
-}
-
-h1 {
-    background-color: black;
-    padding: 10px;
-    margin: 0;
-    color: #92a4ff;
-}
-
-h2 {
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.image {
-    float: right;
-    margin: 0 0 20px 20px;
-    max-width: 25%;
-    height: auto;
-}
-
-.image2 {
-    float: left;
-    margin: 0 20px 20px 0;
-    max-width: 25%;
-    height: auto;
-}
-.image3 {
-    display: block;
-    margin: auto;
-    max-width: 25%;
-    height: auto;
-}
-.article {
-    float: left;
-    width: 70%;
-    background-color: #FFF;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #CCC;
-}
-
-.footer {
     background-color: #333;
-    color: #FFF;
-    padding: 10px;
-    text-align: center;
-    clear: both;
 }
-</style>
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .image {
+        float: right;
+        margin: 0 0 20px 20px;
+        max-width: 25%;
+        height: auto;
+      }
+
+      .image2 {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 25%;
+        height: auto;
+      }
+      /*Cuando un elemento del HTML no es un elemento en linea (se interpreta en línea) 
+    hemos de tratarlo como un bloque y para estos casos existe la propiedad display: block; y,
+     como cualquier otro bloque, le asignaremos un margen automático para que se centre.*/
+      .image3 {
+        display: block;
+        margin: auto;
+        max-width: 25%;
+        height: auto;
+      }
+      .article {
+        float: left;
+        width: 70%;
+        background-color: #fff;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+      }
+      #linkcenter{
+        text-align: center;
+      }
+
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
     <!-- Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes. -->
@@ -117,39 +127,39 @@ p {
         <!-- lista desordenada -->
         <ul>
           <!-- se crean enlaces internos o externos en un documento HTML,en forma de hipervínculo..  -->
-          <li><a class="active" href="index.html">Home </a></li>
-          <li><a href="preferencias.html">Preferencias</a></li>
-          <li><a href="audioVisuales.html">Galeria</a></li>
-          <li><a href="contacto.html ">Contacto</a></li>
+          <li><a class="active" href="index.html">Historia</a></li>
+          <li><a class="active" href="tipos.html">Tipos</a></li>
+          <li><a class="active" href="pasoApaso.html">Paso a Paso</a></li>
+          <li><a class="active" href="contacto.html ">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <h2 style="margin: 15px;">¡Bienvenidos al Mundo del Mate!</h2>
+    <h2 style="margin: 15px">¡Bienvenidos al Mundo del Mate!</h2>
     <!-- es un elemento utilizado para crear una línea horizontal  -->
     <hr />
     <!-- se utiliza para agrupar información muy relevante de una página  -->
-    <article  class="container">
+    <article class="container">
       <h3>El origen del mate</h3>
       <img class="image" src="assets/imgs/mate1.jpg" alt="Mate" />
       <p>
-        <b>¿Qué es el Mate?:</b> <br />
-        El mate Misionero tiene sus raíces en la provincia de Misiones, en el
-        noreste de Argentina, una región conocida por sus vastos yerbatales.
+        El mate tiene distintas verisiones de su origen, pero aquí nos
+        centraremos en sus raíces en la provincia de Misiones, en el noreste de
+        Argentina, una región conocida por sus vastos yerbatales.
         <br />
-        La historia del mate se remonta a los pueblos guaraníes, quienes fueron
-        los primeros en descubrir las propiedades energizantes de las hojas de
-        yerba mate. <br />
-        Con la llegada de los colonizadores españoles, el consumo de mate se
-        difundió y se convirtió en una tradición profundamente arraigada en la
-        cultura argentina.<br />
+        Parte de su historia se remonta a los pueblos guaraníes, que utilizaban
+        las hojas del árbol como bebida, objeto de culto y moneda de cambio.
+        Durante las largas travesías por la selva, los conquistadores españoles
+        notaron que los guaraníes tenían mayor resistencia luego de tomar esta
+        bebida sagrada. Más tarde los jesuitas introdujeron el cultivo en las
+        reducciones y contribuyeron a su difusión y comercialización, al punto
+        tal de que la infusión se hizo conocida entonces como té de los
+        jesuitas. <br />
 
-        En Misiones, el cultivo de yerba mate se ha perfeccionado a lo largo de
-        los siglos, adaptando técnicas sostenibles que preservan el medio
-        ambiente.<br />
-        La yerba mate no solo es una bebida; es un símbolo de amistad y
-        hospitalidad."
+        En la Argentina, llamamos mate a la infusión que se prepara con sus
+        hojas, como también al recipiente donde se la toma, siendo el más
+        utilizado el de calabaza.
       </p>
-      <img class="image2" src="assets/imgs/mate2.jpg" alt="Mate" />
+      <img class="image2" src="assets/imgs/mate3.png" alt="Mate" />
       <p>
         El mate está rodeado de numerosas leyendas y mitos que reflejan su
         importancia cultural. Una de las leyendas guaraníes más conocidas cuenta
@@ -164,40 +174,12 @@ p {
         Estas leyendas no solo destacan el valor del mate como bebida, sino
         también su papel como símbolo de generosidad y amistad.
       </p>
-      <h2>Cómo se Toma el Mate Misionero?</h2>
-      <p>
-        Preparar el mate es todo un ritual. Aquí te explicamos cómo hacerlo paso
-        a paso:
-      </p>
-      <ol>
-        <li>
-          <b>Elige la Yerba:</b> Selecciona una buena yerba mate,
-          preferiblemente de Misiones, para asegurar un sabor auténtico.
-        </li>
-        <li>
-          <b>Llena el Mate:</b> Llena la calabaza o porongo (mate) hasta dos
-          tercios con yerba.
-        </li>
-        <li>
-          <b>Inclina y Agita:</b> Inclina el mate para que la yerba se acomode
-          en un ángulo y agítalo para que los componentes más finos queden en la
-          parte superior.
-        </li>
-        <li>
-          <b>Agua Tibia:</b> Añade un poco de agua tibia (no caliente) en la
-          parte baja para humedecer la yerba.
-        </li>
-        <li>
-          <b>Coloca la Bombilla:</b> Inserta la bombilla en la parte húmeda,
-          tapando la parte superior antes de introducirla.
-        </li>
-        <li>
-          <b>Agua Caliente:</b> Añade agua caliente, pero no hirviendo (80°), y
-          disfruta del primer sorbo. Recuerda, el primer mate suele ser el más
-          amargo.
-        </li>
-      </ol>
-      <img class="image3" src="assets/imgs/leyenda.png" alt="Yari" />
+      <div id="linkcenter">
+    <a href="https://www.rutadelayerbamate.org.ar/yerba-mate/historia/" target="_blank">
+        Aquí puedes leer la leyenda completa</a>
+      <hr />
+      </div>
+    
     </article>
     <footer class="footer">
       <p>Derechos reservados &copy; 2024</p>
