@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href = "assets/Mate.ico" type = "icons8-mate-16">
+    <title>Mateando</title>
+    <style>
+body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+.container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+            background-color: #92a4ff;
+        }
+
+.active {
+    background-color: #333;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #92a4ff;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background-color: #FFF;
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    background-color: rgb(162, 162, 162);
+}
+.imagen {
+
+width: 100%;
+height: auto;
+            
+        
+}
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+</style>
+</head>
+<body>
+    <!-- Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes. -->
+<header> 
+    <!-- Estas etiquetas de título se emplean dentro de un sitio web para identificar los temas y subtemas de los que trata la página. -->
+<h1>Mateando</h1>
+<!-- representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos -->
+    <nav>
+        <!-- lista desordenada -->
+        <ul>
+            <!-- se crean enlaces internos o externos en un documento HTML,en forma de hipervínculo..  -->
+            <li><a class="active" href="index.html">Historia</a></li>
+            <li><a class="active" href="tipos.html">Tipos</a></li>
+            <li><a class="active" href="pasoApaso.html">Paso a Paso</a></li>
+            <li><a class="active" href="contacto.html ">Contacto</a></li>
+        </ul>
+        
+    </nav>
+
+</header> 
+<h2 style="margin: 15px;">Tipos de mates:</h2>
+<p class="container">Tanto para los argentinos, como para algunos adeptos que van apareciendo por el mundo, 
+    el mate resulta un compañero indispensable en el día a día. Se ha extendido tanto su uso 
+    que hoy en día existen mates de diversos materiales como metal, vidrio, plástico, como otros materiales
+     más orgánicos como los de madera, calabaza y hueso. Cada uno posee diferentes características, 
+     las cuales pueden influir en el sabor de esta infusión.</p>
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207, 207, 207);">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th>Material</th> <!--define una celda como encabezado de un grupo de celdas en una tabla-->
+            <th>Descripción</th>
+            <th></th>
+           
+
+
+            <tr> <!--Es para crear filas de tablas-->
+                <td>Calabaza</td> <!--para crear celdas de datos-->
+                <td>Conocidos también como mate porongo o mate poro, es uno de los más tradicionales que existen,
+                     ya que gracias a su forma redondeada y la cascara dura que la recubre en el exterior, 
+                     permiten que sea un excelente recipiente para utilizarlo como mate</td>
+                <td><img class= "imagen" src="assets/imgs/mate_calabaza.webp"></td>
+            </tr>
+            <tr>
+                <td>Madera</td>
+                <td>Los mates de madera suelen realizarse con maderas de quebracho, palo santo o roble. 
+                    Cada uno influye en el sabor del mate de diferente manera, por eso mismo se suelen evitar maderas que sean demasiado aromáticas 
+                    ya que podría afectar al sabor de la infusión.</td>
+                <td><img class= "imagen" src="assets/imgs/mate-de-madera.webp"></td>
+            </tr>
+            <tr>
+                <td>Metal</td>
+                <td>Estos recipientes pueden realizarse tanto en plata como acero inoxidable. Estos mates suelen ser muy duraderos gracias a su material, 
+                    resistente a golpes y caídas tanto como a la corrosión y oxido. Aunque posee una pequeña desventaja debido a que el calor del agua 
+                    puede aumentar su temperatura, por lo que normalmente se lo suele implementar más para las infusiones frías como el terere.</td>
+                <td><img class= "imagen" src="assets/imgs/mate_metal.jpeg"></td>
+            </tr>
+            <tr>
+                <td>Vidrio</td>
+                <td>Actualmente es muy común encontrar mates fundidos en vidrio, el cual en la mayoría de los casos resulta ser vidrio reciclado. 
+                    Su mayor ventaja podría decirse que es que este material no influye en absoluto en el sabor de la infusión, 
+                    por lo que se puede apreciar mejor el verdadero sabor de la yerba mate.</td>
+                <td><img class= "imagen" src="assets/imgs/mate_vidrio.webp"></td>
+            </tr>
+
+
+        </table>
+    </div>
+
+
+</footer>
+<footer class="footer">
+    <p>Derechos reservados &copy; 2024</p>
+</footer>
+
+</body>
+
+</html>
