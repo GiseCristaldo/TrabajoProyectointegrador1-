@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href = "assets/Mate.ico" type = "icons8-mate-16">
     <title>Mateando</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #92a4ff;
+        }
+
+.active {
+    background-color: #333;
+}
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px;
+        }
+
+        div.gallery img {
+            width: 40%;
+            height: auto;
+            
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes. -->
@@ -16,18 +102,49 @@
         <!-- lista desordenada -->
         <ul>
             <!-- se crean enlaces internos o externos en un documento HTML,en forma de hipervínculo..  -->
-        <li> <a href = "index.html">Historia</a> </li> 
-        <li> <a href = "tipos.html">Tipos</a> </li> 
-        <li> <a href = "pasoApaso.html">Paso a Paso</a> </li> 
-        <li> <a href = "contacto.html ">Contacto</a> </li> 
+            <li><a class="active" href="index.html">Historia</a></li>
+            <li><a class="active" href="tipos.html">Tipos</a></li>
+            <li><a class="active" href="pasoApaso.html">Paso a Paso</a></li>
+            <li><a class="active" href="contacto.html ">Contacto</a></li>
         </ul>
         
     </nav>
 
 </header> 
+<div class="centrado">
+    <video src="assets/videos/Mate misionero.mp4" controls autoplay muted></video>
+</div>
 
-<footer>
-<p> Derechos reservados &copy; 2024</p>
+<div class="centrado">
+    <audio src="assets/audios/la historia del mate.mp3" controls></audio>
+</div>
+
+<section class="centrado">
+    <div class="gallery">
+        <a href="assets/imgs/recurso_01.png" target="_blank">
+<img style="display:block; margin:auto;"src="assets/imgs/recurso_01.png" alt="Mate 1"></a>
+        <div class="desc">Cargá el mate con yerba en sus ¾ partes.</div>
+    </div>
+    <div class="gallery">
+        <a href="assets/imgs/recurso_02.png" target="_blank"><img style="display:block; margin:auto;" src="assets/imgs/recurso_02.png" alt="Mate 2" ></a>
+        <div class="desc">Cubrilo con la mano y agitalo boca abajo.</div>
+    </div>
+    <div class="gallery">
+        <a href="assets/imgs/recurso_03.png" target="_blank"><img style="display:block; margin:auto;" src="assets/imgs/recurso_03.png"alt="Mate 3"></a>
+        <div class="desc">Con la yerba a 45° agrega un poco de agua tibia.</div>
+    </div>
+    <div class="gallery">
+        <a href="assets/imgs/recurso_04.png" target="_blank"><img style="display:block; margin:auto;" src="assets/imgs/recurso_04.png" alt="Mate 4"></a>
+        <div class="desc">Coloca la bombilla en la parte baja y no la muevas.</div>
+    </div>
+    <div class="gallery">
+        <a href="assets/imgs/recurso_05.png" target="_blank"><img style="display:block; margin:auto;" src="assets/imgs/recurso_05.png" alt="Mate 5"></a>
+        <div class="desc">Cebá siempre con agua a 75 °C sobre la bombilla.</div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Derechos reservados &copy; 2024</p>
 </footer>
 
 </body>
